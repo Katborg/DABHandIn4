@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAB4", "DAB4\DAB4.csproj", "{9C2A8054-A580-462E-AC39-F507DD9F99CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProsumerInfo", "ProsumerInfo\ProsumerInfo.csproj", "{FF6E37F1-F6AB-4997-B101-557274EFC622}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrandeInfo", "TrandeInfo\TrandeInfo.csproj", "{DBB30B02-D87C-4F46-960B-1CBDB94B7356}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C2A8054-A580-462E-AC39-F507DD9F99CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C2A8054-A580-462E-AC39-F507DD9F99CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C2A8054-A580-462E-AC39-F507DD9F99CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C2A8054-A580-462E-AC39-F507DD9F99CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF6E37F1-F6AB-4997-B101-557274EFC622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF6E37F1-F6AB-4997-B101-557274EFC622}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF6E37F1-F6AB-4997-B101-557274EFC622}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF6E37F1-F6AB-4997-B101-557274EFC622}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBB30B02-D87C-4F46-960B-1CBDB94B7356}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBB30B02-D87C-4F46-960B-1CBDB94B7356}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBB30B02-D87C-4F46-960B-1CBDB94B7356}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBB30B02-D87C-4F46-960B-1CBDB94B7356}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A52DAAF-8C58-42EC-8762-00BD2E9EBC1A}
+	EndGlobalSection
+EndGlobal
