@@ -2,15 +2,25 @@
 
 namespace ProsumerInfo.Models
 {
-    class Prosumer : IProsumer
+    public class Prosumer : IProsumer
 	{
+		public Prosumer(int id, string navn, ProsumerType type, IWallet wallet, ISmartMeter smartMeter)
+		{
+			Id = id;
+			Navn = navn;
+			Type = type;
+			Wallet = wallet;
+			SmartMeter = smartMeter;
+
+		}
 	    public int Id { get; set; }
 	    public string Navn { get; set; }
 	    public ProsumerType Type { get; set; }
-	    public Wallet MyWallet { get; set; }
+	    public IWallet Wallet { get; set; }
+		public ISmartMeter SmartMeter { get; set; }
     }
 
-	enum ProsumerType
+	public enum ProsumerType
 	{
 		Privat
 		,Virksomhed

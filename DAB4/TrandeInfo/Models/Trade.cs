@@ -12,5 +12,13 @@ namespace TrandeInfo.Models
 	    public double AmountKWH { get; set; }
 	    public double price { get; set; }
 
+		public Trade(int prosumerId, int smartGridId, double amountKwh, double price)
+		{
+			ProsumerId = prosumerId;
+			SmartGridId = smartGridId;
+			AmountKWH = amountKwh;
+			this.price = price;
+		}
+
     }
 }

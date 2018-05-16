@@ -4,6 +4,6 @@
 	{
 		double Balance { get; }
 
-		void AddToWallet(double amount);
+		double AddToWallet { set; }
 	}
 }

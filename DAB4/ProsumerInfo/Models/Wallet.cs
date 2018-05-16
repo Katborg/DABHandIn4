@@ -4,12 +4,22 @@ namespace ProsumerInfo.Models
 {
 	public class Wallet : IWallet
 	{
-		public double Balance { get; private set; }
+		private double _balance;
 
-		public void AddToWallet( double amount)
+		public double Balance
 		{
-			Balance += amount;
+			get
+			{
+				return _balance;
+			}
 		}
-		
+
+		public double AddToWallet
+		{
+			set
+			{
+				_balance += value;
+			} 
+		}
 	}
 }

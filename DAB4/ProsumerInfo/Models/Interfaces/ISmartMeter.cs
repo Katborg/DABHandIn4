@@ -1,10 +1,11 @@
 ﻿namespace ProsumerInfo.Models.Interfaces
 {
-	interface ISmartMeter
+	public interface ISmartMeter
 	{
-		string kobberforbindelseId { get; set; }
+		string KobberforbindelseId { get; set; }
 		double Production { get; set; }
 		double Comsumption { get; set; }
+		double Balance { get; }
 		int SamrtgridId { get; set; }
 	}
 }

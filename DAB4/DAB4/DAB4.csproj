@@ -5,4 +5,9 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ProsumerInfo\ProsumerInfo.csproj" />
+    <ProjectReference Include="..\TrandeInfo\TrandeInfo.csproj" />
+  </ItemGroup>
+
 </Project>
