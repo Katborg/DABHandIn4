@@ -46,6 +46,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\AddressRepository.cs" />
+    <Compile Include="Repositories\IAddressRepository.cs" />
+    <Compile Include="Repositories\IExpectedDataRepository.cs" />
+    <Compile Include="Repositories\ISmartMeterDataRepository.cs" />
     <Compile Include="Repositories\SmartMeterDataRepository.cs" />
   </ItemGroup>
   <ItemGroup>

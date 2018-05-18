@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DAB4.Models.Persistence;
-using DAB4.Models;
 
 namespace ProsumerInfo.Repositories
 {
-    class SmartMeterDataRepository:Repository<SmartMeterData>, ISmartMeterDataRepository
+    interface ISmartMeterDataRepository
     {
+
     }
 }

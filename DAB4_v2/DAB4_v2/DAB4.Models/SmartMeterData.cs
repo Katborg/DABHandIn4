@@ -2,7 +2,7 @@
 
 namespace DAB4.Models
 {
-    class SmartMeterData
+    public class SmartMeterData
     {
         [Key]
         public int Id { get; set; }
