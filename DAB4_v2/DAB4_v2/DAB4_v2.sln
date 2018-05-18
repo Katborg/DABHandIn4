@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraderInfo", "TraderInfo\Tr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProsumerInfo", "ProsumerInfo\ProsumerInfo.csproj", "{94E57D49-4A69-424A-B944-08474CF59F2C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraderInfoWebApi", "TraderInfoWebApi\TraderInfoWebApi.csproj", "{3DACCEAA-3A99-43FD-9458-21C5CB50793F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{94E57D49-4A69-424A-B944-08474CF59F2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94E57D49-4A69-424A-B944-08474CF59F2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94E57D49-4A69-424A-B944-08474CF59F2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DACCEAA-3A99-43FD-9458-21C5CB50793F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DACCEAA-3A99-43FD-9458-21C5CB50793F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DACCEAA-3A99-43FD-9458-21C5CB50793F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DACCEAA-3A99-43FD-9458-21C5CB50793F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
