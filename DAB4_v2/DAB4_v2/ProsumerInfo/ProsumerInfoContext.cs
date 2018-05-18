@@ -10,7 +10,7 @@ namespace ProsumerInfo
 {
     public class ProsumerInfoContext:DbContext
     {
-        public ProsumerInfoContext()
+        public ProsumerInfoContext():base("name=ProsumerInfoContext")
         {
             
         }
@@ -19,6 +19,6 @@ namespace ProsumerInfo
         public DbSet<SmartMeterData> SmartMeterDatas { get; set; }
         public DbSet<ExpectedData> ExpectedDatas { get; set; }
 
-
+        public System.Data.Entity.DbSet<DAB4.Models.Prosumer> Prosumers { get; set; }
     }
 }

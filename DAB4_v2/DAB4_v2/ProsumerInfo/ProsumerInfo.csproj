@@ -64,7 +64,9 @@
     <Compile Include="Repositories\ExpectedDataRepository.cs" />
     <Compile Include="Repositories\IAddressRepository.cs" />
     <Compile Include="Repositories\IExpectedDataRepository.cs" />
+    <Compile Include="Repositories\IProsumerRepository.cs" />
     <Compile Include="Repositories\ISmartMeterDataRepository.cs" />
+    <Compile Include="Repositories\ProsumerRepository.cs" />
     <Compile Include="Repositories\SmartMeterDataRepository.cs" />
     <Compile Include="UnitOfWork.cs" />
   </ItemGroup>

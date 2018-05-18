@@ -16,12 +16,15 @@ namespace ProsumerInfo
             _context = context;
             Addresses = new AddressRepository(_context);
             ExpectedDatas = new ExpectedDataRepository(_context);
-            SmartMeters = new SmartMeterDataRepository(_context);
+            SmartMeterDatas = new SmartMeterDataRepository(_context);
+            Prosumers = new ProsumerRepository(_context);
 
         }
         public IAddressRepository Addresses { get; }
         public IExpectedDataRepository ExpectedDatas { get; }
-        public ISmartMeterDataRepository SmartMeters { get; }
+        public ISmartMeterDataRepository SmartMeterDatas { get; }
+        public IProsumerRepository Prosumers { get; }
+
         public int Complete()
         {
             return _context.SaveChanges();

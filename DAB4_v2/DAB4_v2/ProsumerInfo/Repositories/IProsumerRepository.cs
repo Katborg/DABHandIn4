@@ -8,7 +8,7 @@ using DAB4.Models.Persistence;
 
 namespace ProsumerInfo.Repositories
 {
-    public interface ISmartMeterDataRepository:IRepository<SmartMeterData>
+    public interface IProsumerRepository:IRepository<Prosumer>
     {
 
     }

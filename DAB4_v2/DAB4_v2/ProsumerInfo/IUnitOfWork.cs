@@ -11,7 +11,7 @@ namespace ProsumerInfo
     {
         IAddressRepository Addresses { get; }
         IExpectedDataRepository ExpectedDatas { get; }
-        ISmartMeterDataRepository SmartMeters { get; }
+        ISmartMeterDataRepository SmartMeterDatas { get; }
         int Complete();
     }
 }

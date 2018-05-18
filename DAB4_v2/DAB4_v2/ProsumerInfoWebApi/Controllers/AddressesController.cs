@@ -20,14 +20,14 @@ namespace ProsumerInfoWebApi.Controllers
         // GET: api/Addresses
         public IQueryable<Address> GetAddresses()
         {
-            return _unitOfWork.Addresse.;
+            return _unitOfWork.Addresses.GetAll().AsQueryable();
         }
 
         // GET: api/Addresses/5
         [ResponseType(typeof(Address))]
         public IHttpActionResult GetAddress(int id)
         {
-            Address address = db.Addresses.Find(id);
+            Address address = _unitOfWork.Addresses.Get(id);
             if (address == null)
             {
                 return NotFound();
@@ -50,23 +50,17 @@ namespace ProsumerInfoWebApi.Controllers
                 return BadRequest();
             }
 
-            db.Entry(address).State = EntityState.Modified;
+            Address a = _unitOfWork.Addresses.Get(id);
 
-            try
-            {
-                db.SaveChanges();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!AddressExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            if (a == null)
+                return NotFound();
+
+
+            a.City = address.City;
+            a.StreetName = address.StreetName;
+            a.StreetNumber = address.StreetNumber;
+
+            _unitOfWork.Complete();
 
             return StatusCode(HttpStatusCode.NoContent);
         }
@@ -80,8 +74,8 @@ namespace ProsumerInfoWebApi.Controllers
                 return BadRequest(ModelState);
             }
 
-            db.Addresses.Add(address);
-            db.SaveChanges();
+            _unitOfWork.Addresses.Add(address);
+            _unitOfWork.Complete();
 
             return CreatedAtRoute("DefaultApi", new { id = address.Id }, address);
         }
@@ -90,14 +84,14 @@ namespace ProsumerInfoWebApi.Controllers
         [ResponseType(typeof(Address))]
         public IHttpActionResult DeleteAddress(int id)
         {
-            Address address = db.Addresses.Find(id);
+            Address address = _unitOfWork.Addresses.Get(id);
             if (address == null)
             {
                 return NotFound();
             }
 
-            db.Addresses.Remove(address);
-            db.SaveChanges();
+            _unitOfWork.Addresses.Remove(address);
+            _unitOfWork.Complete();
 
             return Ok(address);
         }
@@ -106,14 +100,9 @@ namespace ProsumerInfoWebApi.Controllers
         {
             if (disposing)
             {
-                db.Dispose();
+                _unitOfWork.Dispose();
             }
             base.Dispose(disposing);
-        }
-
-        private bool AddressExists(int id)
-        {
-            return db.Addresses.Count(e => e.Id == id) > 0;
         }
     }
 }
