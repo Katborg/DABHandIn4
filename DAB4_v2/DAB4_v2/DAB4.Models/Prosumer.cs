@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DAB4.Models
 {
-    class Prosumer
+    public class Prosumer
     {
 
         [Key]

@@ -2,7 +2,7 @@
 
 namespace DAB4.Models
 {
-    class WireInfo
+    public class WireInfo
     {
         [Key]
         public int Id { get; set; }

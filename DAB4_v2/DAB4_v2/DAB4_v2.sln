@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAB4.Models", "DAB4.Models\DAB4.Models.csproj", "{9BA91F5C-86F5-4881-BC0D-38A8E1006FC2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraderInfo", "TraderInfo\TraderInfo.csproj", "{7A04CF90-80AC-4BE5-B6FC-3C27A6D23A9D}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProsumerInfo", "ProsumerInfo\ProsumerInfo.csproj", "{94E57D49-4A69-424A-B944-08474CF59F2C}"
 EndProject
 Global
@@ -17,6 +19,10 @@ Global
 		{9BA91F5C-86F5-4881-BC0D-38A8E1006FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BA91F5C-86F5-4881-BC0D-38A8E1006FC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BA91F5C-86F5-4881-BC0D-38A8E1006FC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A04CF90-80AC-4BE5-B6FC-3C27A6D23A9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A04CF90-80AC-4BE5-B6FC-3C27A6D23A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A04CF90-80AC-4BE5-B6FC-3C27A6D23A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A04CF90-80AC-4BE5-B6FC-3C27A6D23A9D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{94E57D49-4A69-424A-B944-08474CF59F2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{94E57D49-4A69-424A-B944-08474CF59F2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94E57D49-4A69-424A-B944-08474CF59F2C}.Release|Any CPU.ActiveCfg = Release|Any CPU

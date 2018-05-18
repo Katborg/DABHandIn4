@@ -2,7 +2,7 @@
 
 namespace DAB4.Models
 {
-    class Address
+    public class Address
     {
         [Key]
         public int Id { get; set; }

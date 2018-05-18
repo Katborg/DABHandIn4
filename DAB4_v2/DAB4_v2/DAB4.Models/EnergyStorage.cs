@@ -2,7 +2,7 @@
 
 namespace DAB4.Models
 {
-    class EnergyStorage
+    public class EnergyStorage
     {
         [Key]
         public int Id { get; set; }

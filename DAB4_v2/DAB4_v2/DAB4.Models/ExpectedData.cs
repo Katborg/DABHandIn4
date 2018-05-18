@@ -2,7 +2,7 @@
 
 namespace DAB4.Models
 {
-    class ExpectedData
+    public class ExpectedData
     {
         [Key]
         public int Id { get; set; }

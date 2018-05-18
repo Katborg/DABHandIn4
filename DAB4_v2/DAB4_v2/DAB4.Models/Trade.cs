@@ -2,7 +2,7 @@
 
 namespace DAB4.Models
 {
-    class Trade
+    public class Trade
     {
         [Key]
         public int Id { get; set; }

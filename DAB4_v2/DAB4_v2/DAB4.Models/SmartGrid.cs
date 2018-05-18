@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DAB4.Models
 {
-    class SmartGrid
+    public class SmartGrid
     {
         [Key]
         public int Id { get; set; }
