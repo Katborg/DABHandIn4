@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Text;
-using DAB4.Models.Models;
 
-namespace DAB4.Models.Models2
+namespace DAB4.Models
 {
     class SmartGrid
     {
