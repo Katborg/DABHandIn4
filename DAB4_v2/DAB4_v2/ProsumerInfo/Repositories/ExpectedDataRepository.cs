@@ -1,18 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAB4.Models;
 using DAB4.Models.Persistence;
+using ProsumerInfo.Repositories;
+using System.Data.Entity;
 
 namespace ProsumerInfo.Repositories
 {
-    class AddressRepository: Repository<Address>, IAddressRepository
+    class ExpectedDataRepository:Repository<ExpectedData>, IExpectedDataRepository
     {
-        public AddressRepository(DbContext context) : base(context)
+        public ExpectedDataRepository(DbContext context) : base(context)
         {
+
         }
 
         public ProsumerInfoContext ProsumerInfoContext

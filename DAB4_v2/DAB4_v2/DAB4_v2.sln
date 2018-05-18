@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProsumerInfo", "ProsumerInf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraderInfoWebApi", "TraderInfoWebApi\TraderInfoWebApi.csproj", "{3DACCEAA-3A99-43FD-9458-21C5CB50793F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProsumerInfoWebApi", "ProsumerInfoWebApi\ProsumerInfoWebApi.csproj", "{FC85C3C4-3029-4680-8C8F-9AFF6B2BDA58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{3DACCEAA-3A99-43FD-9458-21C5CB50793F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DACCEAA-3A99-43FD-9458-21C5CB50793F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DACCEAA-3A99-43FD-9458-21C5CB50793F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC85C3C4-3029-4680-8C8F-9AFF6B2BDA58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC85C3C4-3029-4680-8C8F-9AFF6B2BDA58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC85C3C4-3029-4680-8C8F-9AFF6B2BDA58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC85C3C4-3029-4680-8C8F-9AFF6B2BDA58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
