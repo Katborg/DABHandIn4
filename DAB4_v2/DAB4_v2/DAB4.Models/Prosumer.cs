@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DAB4.Models.Models2
 {
-    class Prosumer
+    public class Prosumer
     {
 
         [Key]

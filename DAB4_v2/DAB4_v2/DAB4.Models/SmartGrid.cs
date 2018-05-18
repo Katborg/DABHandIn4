@@ -6,7 +6,7 @@ using DAB4.Models.Models;
 
 namespace DAB4.Models.Models2
 {
-    class SmartGrid
+    public class SmartGrid
     {
         [Key]
         public int Id { get; set; }

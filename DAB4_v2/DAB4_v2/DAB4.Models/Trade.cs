@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DAB4.Models.Models2
 {
-    class Trade
+    public class Trade
     {
         [Key]
         public int Id { get; set; }
