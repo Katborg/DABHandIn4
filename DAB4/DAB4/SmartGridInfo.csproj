@@ -8,8 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ProsumerInfo\ProsumerInfo.csproj" />
-    <ProjectReference Include="..\TrandeInfo\TrandeInfo.csproj" />
+    <ProjectReference Include="..\DAB4.Models\DAB4.Models.csproj" />
   </ItemGroup>
 
 </Project>

@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DAB4.Models\DAB4.Models.csproj" />
+  </ItemGroup>
+
 </Project>
