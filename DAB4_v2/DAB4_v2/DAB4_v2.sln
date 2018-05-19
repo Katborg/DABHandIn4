@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraderInfoWebApi", "TraderI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProsumerInfoWebApi", "ProsumerInfoWebApi\ProsumerInfoWebApi.csproj", "{FC85C3C4-3029-4680-8C8F-9AFF6B2BDA58}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartGrid", "SmartGrid\SmartGrid.csproj", "{5508616B-2CF8-487E-BAE2-28F997E67CFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartGridWepApi", "SmartGridWepApi\SmartGridWepApi.csproj", "{2BB29D90-C81B-4E46-B33B-32823E78FFE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{FC85C3C4-3029-4680-8C8F-9AFF6B2BDA58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC85C3C4-3029-4680-8C8F-9AFF6B2BDA58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC85C3C4-3029-4680-8C8F-9AFF6B2BDA58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5508616B-2CF8-487E-BAE2-28F997E67CFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5508616B-2CF8-487E-BAE2-28F997E67CFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5508616B-2CF8-487E-BAE2-28F997E67CFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5508616B-2CF8-487E-BAE2-28F997E67CFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BB29D90-C81B-4E46-B33B-32823E78FFE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BB29D90-C81B-4E46-B33B-32823E78FFE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BB29D90-C81B-4E46-B33B-32823E78FFE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BB29D90-C81B-4E46-B33B-32823E78FFE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
