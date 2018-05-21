@@ -22,7 +22,7 @@ namespace SmartGrid
 
 	namespace SmartGridInfo
 	{
-		public class Repository<T>
+		public class Repository<T> : IRepository<T> where T : class
 		{
 			protected DocumentClient _client;
 
@@ -55,7 +55,12 @@ namespace SmartGrid
 				_client.CreateDocumentCollectionIfNotExistsAsync(UriFactory.CreateDatabaseUri(_databaseId), new DocumentCollection { Id = _collectionId });
 			}
 
-			public object Get(int id)
+			public void Add(T entity)
+			{
+				_client.CreateDocumentAsync(UriFactory.CreateDocumentCollectionUri(_databaseId, _collectionId), entity);
+			}
+
+			public T Get(int id)
 			{
 				try
 				{
@@ -68,16 +73,18 @@ namespace SmartGrid
 					Console.WriteLine(e);
 					return null;
 				}
-
 			}
-			public void Add(T entity)
-			{
-				_client.CreateDocumentAsync(UriFactory.CreateDocumentCollectionUri(_databaseId, _collectionId), entity);
-			}
-
-
 		}
 
+
+		public interface IRepository<T> where T : class
+		{
+
+			T Get(int id);
+			
+			void Add(T entity);
+			
+		}
 	}
 
 }
