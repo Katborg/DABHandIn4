@@ -10,7 +10,7 @@ namespace ProsumerInfo
 {
     public class ProsumerInfoContext:DbContext
     {
-        public ProsumerInfoContext():base("name=ProsumerInfoContext")
+        public ProsumerInfoContext():base("name=production_I4DABGr13")
         {
             
         }
@@ -18,7 +18,6 @@ namespace ProsumerInfo
         public DbSet<Address> Addresses { get; set; }
         public DbSet<SmartMeterData> SmartMeterDatas { get; set; }
         public DbSet<ExpectedData> ExpectedDatas { get; set; }
-
-        public System.Data.Entity.DbSet<DAB4.Models.Prosumer> Prosumers { get; set; }
+        public DbSet<Prosumer> Prosumers { get; set; }
     }
 }

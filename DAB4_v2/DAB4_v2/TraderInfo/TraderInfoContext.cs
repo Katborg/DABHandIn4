@@ -10,7 +10,7 @@ namespace TraderInfo
 {
     public class TraderInfoContext : DbContext
     {
-        public TraderInfoContext() : base("name=TraderInfoContext")
+        public TraderInfoContext() : base("name=production_I4DABGr13")
         {
         }
 

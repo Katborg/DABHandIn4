@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{5508616B-2CF8-487E-BAE2-28F997E67CFB}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SmartGrid</RootNamespace>
     <AssemblyName>SmartGrid</AssemblyName>
@@ -129,10 +129,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Repository.cs" />
+    <Compile Include="DbRepository.cs" />
+    <Compile Include="ISmartGridRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SmartGridRepository.cs" />
-    <Compile Include="test.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAB4.Models\DAB4.Models.csproj">

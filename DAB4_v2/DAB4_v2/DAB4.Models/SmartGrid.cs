@@ -1,13 +1,14 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Newtonsoft.Json;
 
 namespace DAB4.Models
 {
     public class SmartGrid
     {
         [Key]
-        public int Id { get; set; }
-
+        [JsonProperty(PropertyName = "id")]
+        public string Id { get; set; }
         public int NumberOfPrivateHomes { get; set; }
         public int NumberOfCompanies { get; set; }
         public int EnergyBalance { get; set; }
@@ -18,6 +19,11 @@ namespace DAB4.Models
         public SmartGrid()
         {
             SmartMeters = new List<SmartMeter>();
+        }
+
+        public override string ToString()
+        {
+            return JsonConvert.SerializeObject(this);
         }
     }
 }
